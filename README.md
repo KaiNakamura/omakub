@@ -7,7 +7,7 @@ Turn a fresh Ubuntu installation into a fully-configured, beautiful, and modern 
 To install this customized version of Omakub on a fresh Ubuntu 24.04+ installation, run:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/KaiNakamura/omakub/main/boot.sh | bash
+wget -qO- https://raw.githubusercontent.com/KaiNakamura/omakub/master/boot.sh | bash
 ```
 
 Watch the introduction video and read more at [omakub.org](https://omakub.org).
