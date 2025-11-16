@@ -3,6 +3,10 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+# Set paths for installation scripts
+export OMAKUB_PATH="$HOME/.local/share/omakub"
+export PATH="$HOME/.local/bin:$HOME/.local/share/omakub/bin:$PATH"
+
 # Give people a chance to retry running the installation
 trap 'echo "Omakub installation failed! You can retry by running: source ~/.local/share/omakub/install.sh"' ERR
 
