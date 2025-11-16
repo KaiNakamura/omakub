@@ -4,19 +4,11 @@
 sudo apt install -y kitty
 mkdir -p ~/.config/kitty
 
-# Copy basic kitty config if it doesn't exist
+# Copy kitty config from dotfiles if it doesn't exist
 if [ ! -f ~/.config/kitty/kitty.conf ]; then
-  # Create a basic kitty config
-  cat > ~/.config/kitty/kitty.conf << 'EOF'
-# Basic Kitty configuration
-font_family      monospace
-font_size        12.0
-background_opacity 0.95
-
-# Window settings
-window_padding_width 8
-confirm_os_window_close 0
-EOF
+  if [ -f ~/repos/dotfiles/kitty/kitty.conf ]; then
+    cp ~/repos/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
+  fi
 fi
 
 # Set kitty as default terminal

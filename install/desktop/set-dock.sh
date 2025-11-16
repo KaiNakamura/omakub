@@ -5,7 +5,6 @@ apps=(
 	"firefox.desktop"
 	"kitty.desktop"
 	"code.desktop"
-	"org.gnome.Settings.desktop"
 	"org.gnome.Nautilus.desktop"
 )
 
