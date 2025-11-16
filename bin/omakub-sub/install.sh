@@ -2,12 +2,10 @@
 
 CHOICES=(
   "Dev Editor        Install alternative programming editors"
-  "Dev Language      Install programming language environment"
-  "Dev Database      Install development database in Docker"
   "1password         Manage your passwords securely across devices"
   "Audacity          Record and edit audio"
   "ASDControl        Set brightness on Apple Studio and XDR displays"
-  "Brave             Chrome-based browser with built-in ad blocking"
+  "Brave             Privacy-focused browser with built-in ad blocking"
   "Dropbox           Sync files across computers with ease"
   "Discord           Communication platform for voice, video, and text messaging"
   "Gimp              Image manipulation tool ala Photoshop"
@@ -45,8 +43,6 @@ else
   case "$INSTALLER" in
   "dev-editor") INSTALLER_FILE="$OMAKUB_PATH/bin/omakub-sub/install-dev-editor.sh" ;;
   "web-apps") INSTALLER_FILE="$OMAKUB_PATH/install/desktop/optional/select-web-apps.sh" ;;
-  "dev-language") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/select-dev-language.sh" ;;
-  "dev-database") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/select-dev-storage.sh" ;;
   "ollama") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-ollama.sh" ;;
   "tailscale") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-tailscale.sh" ;;
   "geekbench") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-geekbench.sh" ;;
